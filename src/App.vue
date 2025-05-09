@@ -1,9 +1,13 @@
 <script setup>
-
+import Intro from './components/Intro.vue';
+import CardsPossibilities from './components/CardsPossibilities.vue';
+import SurveyComponent from './components/SurveyComponent.vue';
 </script>
 
 <template>
-  <div style="font-family: 'Exo 2';">qwqwqw</div>
-  <div style="font-family: 'PT Sans';">qwqwqw</div>
-  <div style="font-family: 'PT Sans'; font-weight: 700;">qwqwqw</div>
+  <main>
+    <Intro />
+    <CardsPossibilities />
+    <SurveyComponent />
+  </main>
 </template>
