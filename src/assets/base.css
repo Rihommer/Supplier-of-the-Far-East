@@ -1,0 +1,48 @@
+:root {
+  --font-family-heading: 'Exo 2';
+  --font-family-body: 'PT Sans';
+
+  --color-primary: #0B7572;
+  --color-primary-alt: #FFF;
+  --color-secondary: #FFCE50;
+  --color-light: #E9E9EC;
+
+  --color-text-heading: #363738;
+  --color-text-body: #6B6B6C;
+  --color-on-surface: #FFF;
+
+  --border-radius-base: 20px;
+  --box-shadow-base: drop-shadow(0 4px 15px rgb(0, 0, 0, 0.12));
+
+  --font-heading: 600 var(--font-size-heading, 2.8rem) / 125% var(--font-family-heading);
+  --font-heading-small: 600 var(--font-size-heading-small, 1.8rem) / 135% var(--font-family-heading);
+}
+
+* {
+  box-sizing: border-box; /* Единая модель размеров */
+  margin: 0;
+  padding: 0;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  min-width: 375px;
+}
+
+@media(min-width: 768px) {
+  :root {
+    --font-size-heading: 4.4rem;
+    --font-size-heading-small: 2rem;
+  }
+}
+
+@media(min-width: 1440px) {
+  :root {
+    --font-size-heading: 4.8rem;
+  }
+}
